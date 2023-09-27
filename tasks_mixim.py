@@ -1,34 +1,34 @@
 
 # ================================ 1
 
-from datetime import datetime
+# from datetime import datetime
 
 
 
-class SmartphoneMixin:
-    def call(self, number):
-        return f'Calling to number +{number}'
-    def where_to_wear(self):
-        return 'You can keep me anywhere'
+# class SmartphoneMixin:
+#     def call(self, number):
+#         return f'Calling to number +{number}'
+#     def where_to_wear(self):
+#         return 'You can keep me anywhere'
 
 
-class WatchMixin:
-    def see_time(self):
-        time = datetime.now()
-        return f'{time.hour}:{time.minute}:{time.second}'
-    def where_to_wear(self):
-        return 'You should wear me on your hand'
+# class WatchMixin:
+#     def see_time(self):
+#         time = datetime.now()
+#         return f'{time.hour}:{time.minute}:{time.second}'
+#     def where_to_wear(self):
+#         return 'You should wear me on your hand'
 
 
 
-class SmartWatch(WatchMixin, SmartphoneMixin):
-    pass
+# class SmartWatch(WatchMixin, SmartphoneMixin):
+#     pass
 
 
-smwatch = SmartWatch()
-print(smwatch.call(996_909_898_434))
-print(smwatch.see_time())
-print(smwatch.where_to_wear())
+# smwatch = SmartWatch()
+# print(smwatch.call(996_909_898_434))
+# print(smwatch.see_time())
+# print(smwatch.where_to_wear())
 
 
 
@@ -58,7 +58,7 @@ class Instagram(CreateMixin):
 
 class TikTok(CreateMixin):
     data_base = {'Zaky9900': 'Zaky'}
-    data_base_video = {}
+    data_base_video = {'Zaky': []}
 
 
 instagram = Instagram()
